@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Are You Happy With My Dumbass?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="step1" class="question active">
+      <div class="gif">
+        <img src= https://media.tenor.com/66LXh4VuPRkAAAAm/diko-gets.webp alt="cute gif" width="100%" />
+      </div>
+      <h1>Hey babe... 🥺👉👈</h1>
+      <p>I have a very important question</p>
+      <button onclick="nextStep('step2')">Continue</button>
+    </div>
+
+    <div id="step2" class="question">
+      <h2>Are you happy with my dumbass? 😅</h2>
+      <button onclick="nextStep('quiz0')">Yes, obviously ❤️</button>
+      <button onclick="nextStep('quiz0')">Always have, always will 🥰</button>
+    </div>
+
+    <div id="quizContainer"></div>
+
+    <div id="result" class="question">
+      <h2>Our perfect date is...</h2>
+      <p id="dateIdea"></p>
+      <button onclick="window.location.reload()">Start Over 🔄</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/audio/2023/03/06/audio_bf1125df86.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
